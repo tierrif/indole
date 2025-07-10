@@ -1,3 +1,9 @@
+<mat-sidenav-container class="dashboard-container">
+  <mat-drawer class="dashboard-drawer" mode="side" opened>
+    <ind-sidenav />
+  </mat-drawer>
 
-Test
-<router-outlet />
+  <mat-drawer-content>
+    <router-outlet />
+  </mat-drawer-content>
+</mat-sidenav-container>

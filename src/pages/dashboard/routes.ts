@@ -10,7 +10,7 @@ export default [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/editor'
+        redirectTo: 'editor'
       },
       {
         path: 'editor',

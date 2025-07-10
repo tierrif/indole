@@ -1,5 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
+import { Sidenav } from './sidenav/sidenav';
 
 
 @Component({
@@ -7,6 +11,11 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterOutlet]
+  imports: [
+    Sidenav,
+    MatSidenavModule,
+    MatToolbarModule,
+    RouterOutlet
+  ]
 })
 export class Dashboard {}

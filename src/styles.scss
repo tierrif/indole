@@ -1,1 +1,4 @@
+@use './material-styles' as material;
+@use './base-styles' as base;
 
+@include base.ind-base-styles();

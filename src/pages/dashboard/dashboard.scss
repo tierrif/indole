@@ -1,3 +1,14 @@
 :host {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboard-drawer {
+  width: 200px;
+}
+
+.dashboard-container {
+  flex: 1;
+  background: --mat-sys-primary-container;
 }
